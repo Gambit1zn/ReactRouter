@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
 import RootLayout from "./pages/Root";
 import Error from "./pages/Error";
+import ProductDetailPage from "./pages/ProductDetail";
 
 //alternate way of defining routes in react router (mostly seen in the older versions of react router)
 // const routeDefinitions = createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePage></HomePage> },
       { path: "/products", element: <ProductsPage /> },
+      { path: "/products/:productId", element: <ProductDetailPage/> }
     ],
   },
 ]);
