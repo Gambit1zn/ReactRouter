@@ -1,0 +1,3 @@
+path "lnp/*" {
+  capabilities = ["read"] 
+}
